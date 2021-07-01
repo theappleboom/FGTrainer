@@ -1,1 +1,228 @@
-{}
+{
+    "name": "BasicControls",
+    "maps": [
+        {
+            "name": "MovementControls",
+            "id": "3af59b26-e74b-4c1f-9960-e653708d4038",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "aef73dad-c465-4538-a347-3c66691c5676",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "8ff5d323-3a0e-4703-b356-14c7cc6d813a",
+                    "path": "2DVector(mode=1)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "66f90a56-4bc9-4d10-ad00-962d84894c17",
+                    "path": "<Keyboard>/#(W)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2c6f1507-fa50-4f04-9d53-d9373bcd9614",
+                    "path": "<Keyboard>/#(S)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "f130014c-2e43-4be5-8d34-9d8c8f545e24",
+                    "path": "<Keyboard>/#(A)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d3637bea-2200-4fe8-aa7a-1467a078e939",
+                    "path": "<Keyboard>/#(D)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Arrows",
+                    "id": "0fd5368e-d7f9-42cb-a1de-23eaa77586e8",
+                    "path": "2DVector(mode=1)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "9daa8844-33b6-467e-9727-e2da2a4a7c10",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2cefa831-74c8-4b8a-8640-741813184cdb",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "b6177314-99e6-4f3d-900a-82beaa77cfc4",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "16f29077-950f-4738-bbb3-4bf7f99adaa6",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "ButtonControls",
+            "id": "7196e945-debe-49ed-83fb-9130e655aa36",
+            "actions": [
+                {
+                    "name": "A Button",
+                    "type": "Button",
+                    "id": "67f7f23a-a27a-4c3c-8e9c-4363f9053453",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "B Button",
+                    "type": "Button",
+                    "id": "c4812365-6c78-43e7-928a-4cc67f503af2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "C Button",
+                    "type": "Button",
+                    "id": "95092c75-71ce-443f-b3c3-0a06833cda92",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "D Button",
+                    "type": "Button",
+                    "id": "24d2407c-bcf7-4398-8093-c630a14690c2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "84179ea4-c926-4d8e-ad79-47e3018e9fb2",
+                    "path": "<Keyboard>/#(H)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "A Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f31026f-7f09-4f55-a3f6-288254924482",
+                    "path": "<Keyboard>/#(J)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "390bb3a4-d898-4e27-bf4a-ce883cabb7e1",
+                    "path": "<Keyboard>/#(K)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "C Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b7e4e21-fb9c-4a19-936e-ec5831f6ad19",
+                    "path": "<Keyboard>/#(L)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "D Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard Controls",
+            "bindingGroup": "Keyboard Controls",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
