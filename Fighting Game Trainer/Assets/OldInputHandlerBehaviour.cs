@@ -35,6 +35,8 @@ public class OldInputHandlerBehaviour : MonoBehaviour
 
     [SerializeField]
     private Text inputDisplay;
+    [SerializeField]
+    Text[] previousInputs = new Text[18];
 
     // Update is called once per frame
     void Update()
@@ -72,6 +74,14 @@ public class OldInputHandlerBehaviour : MonoBehaviour
             case InputDirection.UPRIGHT:
                 inputDisplay.text = "9";
                 break;
+        }
+        if (previousInputs[0].text != inputDisplay.text)
+        {
+            for (int i = previousInputs.Length - 1; i > 0; i--)
+            {
+                previousInputs[i].text = previousInputs[i - 1].text;
+            }
+            previousInputs[0].text = inputDisplay.text;
         }
     }
 
