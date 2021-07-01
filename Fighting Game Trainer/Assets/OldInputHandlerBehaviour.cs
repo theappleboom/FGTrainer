@@ -39,6 +39,8 @@ public class OldInputHandlerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // TODO set up strict 60fps structure
+        inputProp = new InputProperties();
         inputProp.currentDirection = FindDirection();
 
         switch(inputProp.currentDirection)
