@@ -5,28 +5,6 @@ using UnityEngine.UI;
 
 public class OldInputHandlerBehaviour : MonoBehaviour
 {
-    public enum InputDirection
-    {
-        NEUTRAL,
-        RIGHT,
-        DOWNRIGHT,
-        DOWN,
-        DOWNLEFT,
-        LEFT,
-        UPLEFT,
-        UP,
-        UPRIGHT
-    }
-
-    public struct InputProperties
-    {
-        public InputDirection currentDirection;
-        public bool pressingA;
-        public bool pressingB;
-        public bool pressingC;
-        public bool pressingD;
-    }
-
     private InputDirection[] rightDirections = { InputDirection.UPRIGHT, InputDirection.RIGHT, InputDirection.DOWNRIGHT };
     private InputDirection[] neutralDirections = { InputDirection.UP, InputDirection.NEUTRAL, InputDirection.DOWN };
     private InputDirection[] leftDirections = { InputDirection.UPLEFT, InputDirection.LEFT, InputDirection.DOWNLEFT };
@@ -43,7 +21,8 @@ public class OldInputHandlerBehaviour : MonoBehaviour
     {
         // TODO set up strict 60fps structure
         inputProp = new InputProperties();
-        inputProp.currentDirection = FindDirection();
+        //inputProp.currentDirection = FindDirection();
+        inputProp.currentDirection = InputDirection.NEUTRAL;
 
         switch(inputProp.currentDirection)
         {
@@ -85,7 +64,7 @@ public class OldInputHandlerBehaviour : MonoBehaviour
         }
     }
 
-    private InputDirection FindDirection()
+    /*private InputDirection FindDirection()
     {
         InputDirection[] possibleDirections;
         InputDirection direction;
@@ -115,5 +94,5 @@ public class OldInputHandlerBehaviour : MonoBehaviour
         }
 
         return direction;
-    }
+    }*/
 }
